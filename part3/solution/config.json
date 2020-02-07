@@ -1,0 +1,4 @@
+{
+    "SECRET_KEY": "6yTWFOE7j05WpVr8ic",
+    "MONGO_URI": "<SRV HERE>"
+}

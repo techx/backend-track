@@ -9,22 +9,7 @@
 
 <body>
     <h1>Chatter</h1>
-    {% if loggedIn %}
-    <p>Logged in as: {{username}}</p>
-    <button id="logout">logout</button>
-    {% else %}
-    <h3>Register</h3>
-    <input id="regusername" type="text" placeholder="username" />
-    <label for="regpassword">Password: </label>
-    <input id="regpassword" type="password" />
-    <label for="regconfirmpassword">Confirm Password: </label>
-    <input id="regconfirmpassword" type="password" />
-    <button id="register">register</button>
-    <h3>Login</h3>
-    <input id="username" type="text" placeholder="username" />
-    <input id="password" type="password" />
-    <button id="login">login</button>
-    {% endif %}
+    <!-- login fields -->
     <h3>Post</h3>
     <input id="message" type="text" placeholder="the next big thing" />
     <button id="submit">send</button>
