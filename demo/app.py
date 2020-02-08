@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config.from_json('config.json')
 app.secret_key = app.config['SECRET_KEY']
 
-client = MongoClient(app.config['MONGO_URI'])
+client = MongoClient(app.config['MONGO_URI'], ssl=False)
 db = client['blueprint']
 messages = db['messages']
 users = db['users']
