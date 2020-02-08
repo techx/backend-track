@@ -5,6 +5,10 @@ We will be building a simple Hello World website!
 ## Steps
 1. Create the file `app.py`
 1. In `app.py`:
+    * Install pip if not already installed (should come with Python)
+        * For Mac: `brew install python`
+        * For Windows: https://stackoverflow.com/questions/41501636/how-to-install-pip3-on-windows
+    * Run `pip3 install flask`
     * Import `Flask` from `flask`
     * Create a `Flask` object called `app`
     * Add a route to `app` to handle `GET` requests to the root path `/`
