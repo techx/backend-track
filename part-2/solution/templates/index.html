@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Chatter</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h1>Chatter</h1>
+    <h3>Post</h3>
+    <input id="message" type="text" placeholder="the next big thing" />
+    <button id="submit">send</button>
+    <h2>Feed</h2>
+    <div>
+        {% for message in messages %}
+        <p>[{{message['ts']}}] {{ message['message'] }}</p>
+        {% endfor %}
+    </div>
+</body>
